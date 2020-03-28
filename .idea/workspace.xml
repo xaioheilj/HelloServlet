@@ -6,12 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd5c40-b966-4d49-8351-2b4b5be8c505" name="Default" comment="">
+    <list default="true" id="30fd5c40-b966-4d49-8351-2b4b5be8c505" name="Default" comment="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面，解决 网页、请求、响应的中文乱码问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/WEB-INF/classes/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/WEB-INF/classes/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HelloServlet_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +38,32 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="231">
+              <caret line="11" column="12" lean-forward="true" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/fail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +71,8 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="147">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,9 +105,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/success.html" />
+        <option value="$PROJECT_DIR$/web/fail.html" />
         <option value="$PROJECT_DIR$/src/LoginServlet.java" />
       </list>
     </option>
@@ -107,9 +130,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="93" />
-    <option name="y" value="184" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1245" />
     <option name="height" value="669" />
   </component>
@@ -138,12 +161,6 @@
               <item name="Helloservlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelloServlet" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Helloservlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelloServlet" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +316,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585382112763</updated>
-      <workItem from="1585382116908" duration="5011000" />
+      <workItem from="1585382116908" duration="7034000" />
     </task>
     <task id="LOCAL-00001" summary="Pull之后需要重新配置Tomcat运行&#10;URL:localhost:8080/hello">
       <created>1585388940211</created>
@@ -329,14 +346,28 @@
       <option name="project" value="LOCAL" />
       <updated>1585403112887</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面">
+      <created>1585403997650</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585403997650</updated>
+    </task>
+    <task id="LOCAL-00006" summary="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面，解决 网页、请求、响应的中文乱码问题">
+      <created>1585404971009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585404971009</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5011000" />
+    <option name="totallyTimeSpent" value="7034000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="198" y="370" width="1245" height="669" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -361,9 +392,9 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" weight="0.40112993" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5141243" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42260063" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0379107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15332326" />
       <window_info anchor="bottom" id="Problems" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
@@ -397,7 +428,9 @@
     <MESSAGE value="Pull之后需要重新配置Tomcat运行&#10;浏览器地址栏输入:localhost:8080/hello" />
     <MESSAGE value="Pull到本地之后需要重新配置Tomcat运行&#10;浏览器地址栏输入:localhost:8080/hello" />
     <MESSAGE value="实现localhost:8080/login在login.html页面输入账号和密码提交到后台" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现localhost:8080/login在login.html页面输入账号和密码提交到后台" />
+    <MESSAGE value="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面" />
+    <MESSAGE value="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面，解决 网页、请求、响应的中文乱码问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现localhost:8080/login在login.html页面输入账号和密码提交到后台,在内存中判断用户名和密码是不是admin和123,将结果返回给HTML页面，解决 网页、请求、响应的中文乱码问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
@@ -409,8 +442,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="231">
+          <caret line="11" column="12" lean-forward="true" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/fail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -426,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="147">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,14 +17,20 @@ public class LoginServlet extends HttpServlet {
 
         String html = null;
 
-        if ("admin".equals(name) && "123".equals(password))
-            html = "<div style='color:green'>login success</div>";
-        else
-            html="<div style='color:green'>login fail</div>";
+        if ("admin".equals(name) && "123".equals(password)) {
+            //html="<div color:red>login success</div>";
+            //服务端页面跳转
+            req.getRequestDispatcher("success.html").forward(req, resp);
+        }
+        else{
+            //html="<div color:red>login fail</div>";
+            //客户端页面跳转
+            resp.sendRedirect("fail.html");
+        }
 
-        resp.setContentType("text/html,Charset=UTF-8");//设置响应编码方式
-        PrintWriter pw = resp.getWriter();
-        pw.println(html);
+//        resp.setContentType("text/html,Charset=UTF-8");//设置响应编码方式
+//        PrintWriter pw = resp.getWriter();
+//        pw.println(html);
 
     }
 }
