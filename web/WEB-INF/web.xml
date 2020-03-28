@@ -10,6 +10,13 @@
             <url-pattern>/hello</url-pattern>
         </servlet-mapping>
 
+
+    <!--自启动配置，Tomcat启动则servlet开始初始化，数字越小优先级越高-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+        <load-on-startup>10</load-on-startup>
+    </servlet>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>LoginServlet</servlet-class>
